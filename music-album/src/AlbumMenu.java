@@ -154,6 +154,7 @@ public class AlbumMenu {
     }
 
     public static void main(String[] args) {
+    	
         // Create an instance of AlbumDao and pass it to AlbumMenu
         AlbumDao albumDao = new AlbumDaoIMPL();
         AlbumMenu menu = new AlbumMenu(albumDao);
