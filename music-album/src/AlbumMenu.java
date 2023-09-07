@@ -3,11 +3,9 @@ import java.util.Scanner;
 
 public class AlbumMenu {
     private AlbumDao albumDao; // Assume you have an AlbumDao implementation
-
     public AlbumMenu(AlbumDao albumDao) {
         this.albumDao = albumDao;
     }
-
     public void displayMenu() {
         System.out.println("Album Menu:");
         System.out.println("1. Add an album");
@@ -154,10 +152,9 @@ public class AlbumMenu {
     }
 
     public static void main(String[] args) {
-    	
         // Create an instance of AlbumDao and pass it to AlbumMenu
-        AlbumDao albumDao = new AlbumDaoIMPL();
-        AlbumMenu menu = new AlbumMenu(albumDao);
-        menu.run();
+    	 AlbumDao albumDao = new AlbumDaoIMPL();
+    	    AlbumMenu menu = new AlbumMenu(albumDao);
+    	    menu.run();
     }
 }
